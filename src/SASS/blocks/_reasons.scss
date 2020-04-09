@@ -1,0 +1,37 @@
+.reasons {
+    min-height: 472px;
+    background-color: #f6f6f6;
+    padding: 70px 0 78px 0;
+    &__header {
+        color: #0d0d0d;
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+        margin: 0 auto;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+    &__item {
+        width: 247px;
+        margin-top: 65px;
+    }
+    &__title {
+        margin-top: 28px;
+        color: #0d0d0d;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    &__descr {
+        color: #0d0d0d;
+        font-size: 15px;
+        font-weight: 300;
+        margin-top: 26px;
+        a {
+            color: #ff0000;
+            text-decoration: underline;
+        }
+    }
+}
