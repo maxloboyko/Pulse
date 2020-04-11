@@ -1,0 +1,63 @@
+@media (max-width: 1200px) {
+    .promo {
+    &__header {
+        font-size: 37px;
+        line-height: 30px;
+    }
+    &__subheader {
+        font-size: 21px;
+        line-height: 12px;
+    }
+    }
+}
+@media (max-width: 991px) {
+    .header {
+        display: flex;
+        justify-content: space-around;
+    &__logo {
+        img {
+            width: 80%
+        }
+    }
+    &__official {
+        padding-right: 45px;
+        font-size: 11px;
+        span {
+            font-size: 17px;
+        }
+    }
+    &__phone {
+        font-size: 16px;
+    }
+    button {
+        width: 130px;
+        height: 26px;
+        font-size: 10px;
+    }
+    }
+    .promo {
+    &__wrapper {
+        padding-right: 20px;
+    }
+    &__header {
+        font-size: 32px;
+        line-height: 27px;
+    }
+    &__subheader {
+        font-size: 18px;
+    }
+    }
+    .reasons {
+        padding: 50px 20px;
+    &__header {
+        font-size: 24px;
+    }
+    &__item {
+        margin-top: 40px;
+    }
+    &__descr {
+        width: 220px;
+        font-size: 13px;
+    }
+    }
+}
