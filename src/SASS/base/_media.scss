@@ -59,9 +59,6 @@
 }
 @media (max-width: 767px) {
     .header {
-    &__logo {
-        width: 200px;
-    }
     &__official {
         padding-right: 35px;
         font-size: 10px;
@@ -124,9 +121,53 @@
 }
 @media (max-width: 575px) {
     .header {
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        text-align: center;
+    &__contacts {
+            position: absolute;
+            right: 0;
+        }
+    &__phone {
+        display: none;
+    }
+    button{
+        width: 80px;
+        height: 25px;
+        font-size: 7px;   
+    }
+    &__logo{
+        width: 200px;
+        img {
+            width: 70%;
+        }
+    }
+    &__official {
+        padding-right: 0px;
+        margin-top: 30px;
+    }
+    }
+    .promo {
+        padding: 21px 30px 20px;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    &__header {
+        font-size: 20px;
+        line-height: 6px;
+    }
+    &__subheader {
+        font-size: 11px;
+        line-height: 4px;
+    }
+    &__icons {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-evenly;
+    }
     }
 }
