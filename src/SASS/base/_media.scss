@@ -44,6 +44,7 @@
     }
     }
     .advantages {
+        padding: 70px 20px 80px;
     .title {
         font-size: 24px;
     }
@@ -56,6 +57,19 @@
     &__descr {
         width: 220px;
         font-size: 13px;
+    }
+    }
+    .consultation {
+    .title_left {
+        font-size: 32px;
+        padding-left: 20px;
+    }
+    &__descr {
+        padding-left: 20px;
+    }
+    .feed-form {
+        padding-left: 20px;
+
     }
     }
 }
@@ -110,7 +124,7 @@
     .advantages {
         padding: 50px 0 60px 0;
     .title {
-        font-size: 21px;
+        font-size: 29px;
     }
     &__wrapper {
         display: flex;
@@ -122,6 +136,23 @@
     }
     &__descr {
         margin-top: 20px;
+    }
+    }
+    .consultation {
+    .title_left {
+        font-size: 29px;
+        line-height: 37px;
+    }
+    .feed-form {
+        margin-top: 30px;
+        input {
+            height: 45px;
+        }
+    }
+    .button {
+        &_submit {
+            height: 50px;
+        }
     }
     }
 }
@@ -201,6 +232,23 @@
     }
     .title {
         font-size: 18px;
+    }
+    }
+    .consultation {
+    .title_left {
+        padding-left: 0;
+        font-size: 18px;
+        text-align: center;
+        line-height: 30px;
+    }
+    &__descr {
+        font-size: 15px;
+        text-align: center;
+        padding-left: 0;
+    }
+    .feed-form {
+        padding: 0 20px;
+        width: 100%;
     }
     }
 }
