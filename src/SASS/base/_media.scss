@@ -16,7 +16,7 @@
         background-position: right;
     }
     .carousel {
-        padding: 65px 0 40px;
+        padding: 65px 0;
         &__inner {
             width: 100%;
         }
@@ -88,7 +88,7 @@
     }
     }
     .carousel {
-        padding: 50px 0 30px;
+        padding: 50px 0;
     .tns-nav {
         margin-top: 15px;
         button {
@@ -96,6 +96,12 @@
             height: 12px;
         }
     }
+    }
+    .catalog {
+        &__content {
+            justify-content: space-around;
+            padding: 0 65px;
+        }
     }
 }
 @media (max-width: 767px) {
@@ -184,9 +190,27 @@
     }
     }
     .carousel {
-        padding: 40px 0 25px;
+        padding: 40px 0;
     .tns-nav {
         margin-top: 7px;
+    }
+    }
+    .catalog {
+        &__tabs {
+            margin-top: 35px;
+        }
+        &__tab {
+            width: 150px;
+            font-size: 15px;
+        }
+        &__content {
+            margin-top: 45px;
+            &:nth-last-child(-n+2) {
+                padding: 0 70px;
+            }
+        }
+    .title {
+        font-size: 29px;
     }
     }
 }
@@ -228,7 +252,7 @@
         align-items: center;
     }
     &__header {
-        font-size: 19px;
+        font-size: 21px;
     }
     &__subheader {
         font-size: 11px;
@@ -265,14 +289,14 @@
         margin-top: 25px;
     }
     .title {
-        font-size: 18px;
+        font-size: 20px;
     }
     }
     .consultation {
         min-height: 470px;
         padding: 30px 20px 30px;
     .title_left {
-        font-size: 18px;
+        font-size: 20px;
         text-align: center;
         line-height: 22px;
     }
@@ -294,13 +318,49 @@
     }
     }
     .carousel {
-        padding: 40px 0 25px;
+        padding: 30px 0;
+        &__inner {
+            img {
+                width: 80%;
+            }
+        }
     .tns-nav {
         margin-top: 7px;
         button {
-            width: 10px;
-            height: 10px;
+            width: 12px;
+            height: 12px;
         }
     }
     }
+    .catalog {
+        &__tabs {
+            margin-top: 25px;
+            flex-direction: column;
+            padding: 0 20px;
+        }
+        &__tab {
+            margin-top: 10px;
+            width: 100%;
+            font-size: 16px;
+            transform: none;
+            border-radius: 10px;
+        }
+        div {
+            transform: none;
+        }
+        &__content {
+            margin-top: 45px;
+            padding: 0;
+            &:nth-last-child(-n+2) {
+                padding: 0;
+            }
+        }
+        &-item {
+            width: 280px
+        }
+    .title {
+        font-size: 20px;
+    }
+    }
+
 }
