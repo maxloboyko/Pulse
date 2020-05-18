@@ -32,20 +32,19 @@ const slider = tns({
     items: 1,
     slideBy: 'page',
     autoplay: false,
-    controls: false,
+    controls: true,
+    controlsContainer: '.carousel .controls',
     nav: true,
     navPosition: 'bottom',
+    navAsThumbnails: true,
     responsive: {
-        1210: {
-            nav: false
-        }
+        1200: {
+            nav: false,
+            controls: true
+        },
+        320: {
+            nav: true,
+            controls: false
+        },
     }
-});
-
-document.querySelector('.prev').addEventListener('click', function () {
-    slider.goTo('prev');
-});
-
-document.querySelector('.next').addEventListener('click', function () {
-    slider.goTo('next');
 });

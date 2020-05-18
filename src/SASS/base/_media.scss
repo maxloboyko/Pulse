@@ -20,9 +20,9 @@
         &__inner {
             width: 100%;
         }
-    .prev, .next {
-        display: none;
     }
+    .catalog {
+        padding-bottom: 60px;
     }
 }
 @media (max-width: 991px) {
@@ -98,10 +98,40 @@
     }
     }
     .catalog {
-        &__content {
-            justify-content: space-around;
-            padding: 0 65px;
+        padding-bottom: 50px;
+    .title {
+        margin-bottom: 35px;
+        font-size: 24px;
+    }
+    &__content {
+        justify-content: space-around;
+        padding: 0 65px;
+    }
+    }
+    .reviews {
+        padding-bottom: 35px;
+    .title {
+        margin-bottom: 35px;
+        font-size: 24px;
+    }
+    &__item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        &:nth-child(2){
+            margin-top: 30px;
         }
+    }
+    &__text {
+        padding: 0;
+        margin: 20px 80px 0 80px;
+        text-align: center;
+    }
+    hr {
+        margin: 30px 20px;
+    }
     }
 }
 @media (max-width: 767px) {
@@ -196,19 +226,20 @@
     }
     }
     .catalog {
-        &__tabs {
-            margin-top: 35px;
+        padding-bottom: 35px;
+    &__tabs {
+        margin-top: 35px;
+    }
+    &__tab {
+        width: 150px;
+        font-size: 15px;
+    }
+    &__content {
+        margin-top: 45px;
+        &:nth-last-child(-n+2) {
+            padding: 0 70px;
         }
-        &__tab {
-            width: 150px;
-            font-size: 15px;
-        }
-        &__content {
-            margin-top: 45px;
-            &:nth-last-child(-n+2) {
-                padding: 0 70px;
-            }
-        }
+    }
     .title {
         font-size: 29px;
     }
@@ -221,9 +252,9 @@
         flex-direction: column;
         align-items: flex-start;
     &__contacts {
-            position: absolute;
-            right: 0;
-        }
+        position: absolute;
+        right: 0;
+    }
     &__phone {
         display: none;
     }
@@ -274,7 +305,7 @@
         margin-top: 27px;
         width: 235px;
         height: 34px;
-        font-size: 13px;
+        font-size: 14px;
     }
     &__link {
         font-size: 13px;
@@ -301,7 +332,7 @@
         line-height: 22px;
     }
     &__descr {
-        font-size: 15px;
+        font-size: 16px;
         text-align: center;
         padding-top: 20px;
     }
@@ -309,12 +340,12 @@
         width: 100%;
         input {
             height: 35px;
-            font-size: 11px;
+            font-size: 13px;
         }
     }
     .button_submit {
         height: 40px;
-        font-size: 13px;
+        font-size: 14px;
     }
     }
     .carousel {
@@ -333,33 +364,58 @@
     }
     }
     .catalog {
-        &__tabs {
-            margin-top: 25px;
-            flex-direction: column;
-            padding: 0 20px;
+        padding-bottom: 10px;
+        &-item__descr {
+            font-size: 15px;
         }
-        &__tab {
-            margin-top: 10px;
-            width: 100%;
-            font-size: 16px;
-            transform: none;
-            border-radius: 10px;
-        }
-        div {
-            transform: none;
-        }
-        &__content {
-            margin-top: 45px;
+    &__tabs {
+        margin-top: 25px;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    &__tab {
+        margin-top: 10px;
+        width: 100%;
+        font-size: 16px;
+        transform: none;
+        border-radius: 10px;
+    }
+    div {
+        transform: none;
+    }
+    &__content {
+        margin-top: 45px;
+        padding: 0;
+        &:nth-last-child(-n+2) {
             padding: 0;
-            &:nth-last-child(-n+2) {
-                padding: 0;
-            }
         }
-        &-item {
-            width: 280px
-        }
+    }
     .title {
         font-size: 20px;
+    }
+    }
+    .reviews {
+        padding-bottom: 30px;
+    .title {
+        margin-bottom: 25px;
+        font-size: 20px;
+    }
+    &__item {
+        margin-top: 40px;
+        &:nth-child(2){
+            margin-top: 30px;
+        }
+    }
+    &__text {
+        padding: 0;
+        margin: 20px 35px 0 35px;
+    }
+    &__descr {
+        padding-top: 15px;
+        font-size: 16px;
+    }
+    hr {
+        margin: 30px 20px;
     }
     }
 
