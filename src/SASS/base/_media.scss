@@ -456,4 +456,33 @@
             }
         }
     }
+    .modal {
+        width: 250px;
+        min-height: 380px;
+        padding: 18px 10px 10px 10px;
+        &__close {
+            right: -20px;
+            font-size: 21px;
+            line-height: 10px;
+        }
+        &__subtitle {
+            font-size: 18px;
+        }
+        &__descr {
+            font-size: 14px;
+        }
+        .feed-form {
+            padding: 0 14px;
+            width: 240px;
+            input {
+                height: 40px;
+            }
+        }
+        .button {
+            &_submit {
+                height: 45px;
+                font-size: 14px;
+            }
+        }
+    }
 }
