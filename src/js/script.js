@@ -39,8 +39,10 @@ $(document).ready(function(){
         $(this).on('click', function() {
             $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
             $('.overlay, #order').fadeIn('slow');
-        });
+        })
     });
+
+    $('.feed-form').validate();
 });
 
 const slider = tns({
