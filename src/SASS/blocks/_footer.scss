@@ -43,13 +43,15 @@
         img {
             height: 27px;
         }
+        &:hover {
+            box-shadow: 0 0 0 4px white inset, 0 0 0 8px $main-color inset ;
+            border: none;
+            transition: 0.5s all;
+        }
     }
     &__social {
         display: flex;
         align-items: center;
         justify-content: center;
-        &:hover {
-            box-shadow: green;
-        }
     }
 }
