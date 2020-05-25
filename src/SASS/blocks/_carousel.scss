@@ -41,6 +41,7 @@
             height: 15px;
             border-radius: 100%;
             border: none;
+            outline: none !important;
         }
         .tns-nav-active {
             background-color: $main-color;
